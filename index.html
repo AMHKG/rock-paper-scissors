@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bangers&display=swap" rel="stylesheet">
+    <title>Rock Paper Scissors</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="img/favicon.ico">
+    
+</head>
+
+<body>
+
+    <header>
+        <h1>Rock Paper Scissors Shoot!</h1>
+    </header>
+    
+    <main>
+        <div class="game-commentary-container">
+            <h2 class="game-info" id="gameInfo">First to score 3 points wins the game</h2>
+            <p class="commentary" id="commentary">Click a button to play</p>
+        </div>
+
+        <div class="scoreboard-container">
+
+            <div class="player-scoreboard">
+                <div class="sign" id="playerSign">❔</div>
+                <p>Player score</p>
+                <p id="playerScoreDisplay">0</p>
+            </div>
+
+            <div class="computer-scoreboard">
+                <div class="sign" id="computerSign">❔</div>
+                <p>Computer score</p>
+                <p id="computerScoreDisplay">0</p>
+            </div>
+
+        </div>
+
+        
+        <div class="gameplay-buttons-container">
+            <div class="btn-background">
+                <button>
+                    <div class="sign" id="rockBtn">✊🏻</div>
+                </button>
+            </div>
+            
+            <button>
+                <div class="sign" id="paperBtn">🖐🏻</div>
+            </button>
+            <button>
+                <div class="sign" id="scissorsBtn">✌🏻</div>
+            </button>
+        </div>
+    </main>
+
+    <footer>
+        <p>Check out my code</p>
+        <a href="https://github.com/AMHKG/rock-paper-scissors" target="_blank">
+        <img class="github-logo" src="img/github-mark.svg"/>
+        </a>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

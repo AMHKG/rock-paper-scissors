@@ -1,0 +1,136 @@
+/* RESET */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+    background: #222831;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background: 
+        linear-gradient(45deg, #1a1a1a 0%, #003366 100%),
+        repeating-linear-gradient(
+            45deg,
+            rgba(0, 255, 255, 0.1) 0px,
+            rgba(0, 255, 255, 0.1) 20px,
+            rgba(0, 255, 0, 0.1) 20px,
+            rgba(0, 255, 0, 0.1) 40px
+        ),
+        radial-gradient(
+            circle at 50% 50%,
+            rgba(32, 196, 232, 0.3) 0%,
+            rgba(76, 201, 240, 0.1) 100%
+        );
+    
+    background-blend-mode: normal, overlay, overlay;
+}
+
+/* HEADER */
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(17, 23, 32, 0.3);
+    height: 10vh;
+    text-align: center;
+    font-family: "Bangers", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 25px;
+    color: #fac650;
+}
+
+/* MAIN */
+
+main {
+    height: 85vh;
+}
+
+.game-commentary-container {
+    height: 15%;
+    padding-top: 30px;
+    text-align: center;
+
+}
+
+.game-info {
+    font-size: 25px;
+}
+
+.commentary {
+    padding-top: 10px;
+    font-size: 20px;
+}
+
+
+.scoreboard-container {
+    height: 35%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+}
+
+.player-scoreboard,
+.computer-scoreboard {
+    width: 190px;
+    height: 200px;
+    text-align: center;
+    font-size: 25px;
+}
+
+.sign {
+    font-size: 80px;
+    margin-bottom: 20px;
+}
+
+.gameplay-buttons-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    height: 30%;
+    text-align: center;
+}
+
+button {
+    background-color: rgba(34, 37, 42, 0.3); 
+    width: 160px;
+    height: 160px;
+    border: none;
+    border-radius: 10px;
+}
+button:hover {
+    background-color: rgba(74, 79, 87, 0.3);
+}
+
+button:active {
+    background-color: rgba(91, 95, 104, 0.3);
+}
+
+/* FOOTER */
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    height: 5vh;
+    text-align: center;
+    background-color: rgba(17, 23, 32, 0.3);
+}
+
+.github-logo {
+    width: 28px;
+    height: 28px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.github-logo:hover {
+  transform: rotate(360deg) scale(1.2);
+}
+
