@@ -6,6 +6,8 @@
   padding: 0;
 }
 
+/* BODY */
+
 body {
     background: #222831;
     color: white;
@@ -118,10 +120,41 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 5px;
     height: 5vh;
     text-align: center;
-    background-color: rgba(17, 23, 32, 0.3);
+    color: var(--dark);
+}
+
+footer p {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin: 0;
+    padding: 0;
+}
+
+.built-by {
+    font-weight: 100;
+}
+
+.github-link, .source-link {
+    color: inherit;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.github-link:hover {
+    text-decoration: underline;
+}
+
+.source-link {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.source-link:hover .source-text {
+    text-decoration: underline;
 }
 
 .github-logo {
@@ -130,7 +163,6 @@ footer {
     transition: transform 0.3s ease-in-out;
 }
 
-.github-logo:hover {
-  transform: rotate(360deg) scale(1.2);
+.source-link:hover .github-logo {
+    transform: rotate(360deg) scale(1.2);
 }
-
